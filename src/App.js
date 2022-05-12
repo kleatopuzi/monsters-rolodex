@@ -20,37 +20,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <CardList name="klea">
-          {" "}
-          {/* <h1> heloooooo</h1>{" "} */}
-          {this.state.monsters.map((monster) => (
-            <h1 key={monster.id}> {monster.name}</h1>
-          ))}
-        </CardList>
+        <CardList monsters={this.state.monsters} />
       </div>
     );
   }
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> say hello and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
