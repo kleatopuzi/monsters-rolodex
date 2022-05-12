@@ -1,4 +1,5 @@
 import React from "react";
+import { CardList } from "./components/cardList/cardList_cmp";
 // import logo from "./logo.svg";
 import "./App.css";
 
@@ -19,9 +20,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.monsters.map((monster) => (
-          <h1 key={monster.id}> {monster.name}</h1>
-        ))}
+        <CardList name="klea">
+          {" "}
+          {/* <h1> heloooooo</h1>{" "} */}
+          {this.state.monsters.map((monster) => (
+            <h1 key={monster.id}> {monster.name}</h1>
+          ))}
+        </CardList>
       </div>
     );
   }
