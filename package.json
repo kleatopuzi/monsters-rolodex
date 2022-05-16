@@ -7,6 +7,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.7.0",
     "@testing-library/jest-dom": "^5.16.4",
+    "homepage": "https://kleatopuzi.github.io/monsters-rolodex",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "nth-check": ">=2.0.1",
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
